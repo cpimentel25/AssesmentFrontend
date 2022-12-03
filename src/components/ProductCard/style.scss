@@ -1,0 +1,78 @@
+.productcard {
+  background-color: white;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: left;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  &-info {
+    margin: 0 0 20px 20px;
+
+    &_id {
+      margin-top: 10px;
+    }
+
+    &_id, &_title {
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_img {
+      width: auto;
+      height: 100px;
+      background-color: rgba(102, 102, 102, 0.5);
+    }
+  }
+
+  &-interactive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    &_button{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 14px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+      background-origin: border-box;
+      box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      cursor: pointer;
+    }
+
+    &_button:active {
+      box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+      outline: 0;
+    }
+
+    &_button:disabled {
+      background: linear-gradient(180deg, #8f9192 0%, #bcbcbd 100%);
+
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+}
