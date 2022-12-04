@@ -27,7 +27,5 @@ module.exports = {
         //   }],
         "semi": [2, "always"],
         "quotes": [2, "double"],
-        "assert": "both",
-        "depth": 3,
     }
 };

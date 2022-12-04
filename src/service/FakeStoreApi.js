@@ -1,10 +1,10 @@
-const API = 'https://fakestoreapi.com/products';
+const API = "https://fakestoreapi.com/products";
 
 export async function GetData(data) {
   const payload = {
-    method: 'GET',
+    method: "GET",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
   };
