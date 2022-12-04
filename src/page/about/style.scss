@@ -1,0 +1,47 @@
+.about {
+  width: 800px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+
+  &-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &_me {
+      width: 60%;
+      margin-left: 30px;
+
+      &_text {
+        text-align: left;
+        font-size: 20px;
+
+        &_github {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+        }
+      }
+    }
+
+    &_img {
+      width: 40%;
+
+      &_me {
+        width: 100%;
+      }
+    }
+  }
+
+  &-smart {
+
+    &_list {
+      text-align: left;
+      font-size: 20px;
+    }
+  }
+}

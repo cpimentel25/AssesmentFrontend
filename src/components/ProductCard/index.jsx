@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './style.scss';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import React from "react";
+import "./style.scss";
 
 const ProductCard = (props) => {
   // eslint-disable-next-line
@@ -18,7 +19,7 @@ const ProductCard = (props) => {
     }
     if (secs === 0){
       if (mins === 0){
-        clearInterval(interval)
+        clearInterval(interval);
       } else {
         setMins(mins - 1);
         setSecs(59);
@@ -31,8 +32,8 @@ const ProductCard = (props) => {
   });
 
   const handleClick = () => {
-    console.log('Working!')
-  }
+    console.log("Working!");
+  };
 
   return (
     <div className='productcard'>

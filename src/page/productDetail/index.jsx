@@ -1,6 +1,7 @@
-import './style.scss';
-import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import "./style.scss";
 
 const ProductDetail = () => {
   const { id } = useParams();
